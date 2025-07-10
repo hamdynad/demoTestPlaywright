@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                  /* Specify ECMAScript target version for emitted JavaScript. Use a recent version like ES2022 or ESNext. */
+    "lib": ["ES2022", "DOM"],            /* Specify a library of global API's that should be available in the runtime environment. "DOM" is needed for browser-related types. */
+    "module": "CommonJS",                /* Specify module code generation. "CommonJS" is typical for Node.js environments. */
+    "allowJs": true,                     /* Allow JavaScript files to be compiled (useful if you have mixed JS/TS). */
+    "checkJs": true,                     /* Report errors in .js files too. */
+    "strict": true,                      /* Enable all strict type-checking options. Highly recommended. */
+    "esModuleInterop": true,             /* Emit additional JavaScript to ease support for importing CommonJS modules. */
+    "skipLibCheck": true,                /* Skip type checking all .d.ts files. Can speed up compilation for large node_modules. */
+    "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+    "resolveJsonModule": true,           /* Allow importing modules with a '.json' extension. */
+    "isolatedModules": true,             /* Ensure that each file can be safely transpiled without relying on other imports. Useful for bundlers. */
+    "noEmit": true,                      /* Do not emit output files (Playwright handles compilation internally, or you'd use a bundler). */
+    "types": ["node", "@playwright/test"], /* Include type definitions for Node.js and Playwright. This is crucial for Playwright types. */
+    "moduleResolution": "node"           /* Specifies how modules are resolved. "node" is common for Node.js projects. */
+  },
+  "include": [
+    "tests/**/*.ts",                     /* IMPORTANT: Include all .ts files within your 'tests' folder. */
+    "playwright.config.ts"               /* Include your Playwright configuration file. */
+  ],
+  "exclude": [
+    "node_modules"                       /* Exclude the node_modules folder from compilation. */
+  ]
+}
